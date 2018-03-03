@@ -1,4 +1,4 @@
-// SetupDlg.cpp : ÊµÏÖÎÄ¼þ
+// SetupDlg.cpp : å®žçŽ°æ–‡ä»¶
 //
 
 #include "stdafx.h"
@@ -7,7 +7,7 @@
 #include "afxdialogex.h"
 
 
-// CSetupDlg ¶Ô»°¿ò
+// CSetupDlg å¯¹è¯æ¡†
 
 IMPLEMENT_DYNAMIC(CSetupDlg, CDialogEx)
 
@@ -47,14 +47,14 @@ BEGIN_MESSAGE_MAP(CSetupDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// CSetupDlg ÏûÏ¢´¦Àí³ÌÐò
+// CSetupDlg æ¶ˆæ¯å¤„ç†ç¨‹åº
 
 
 BOOL CSetupDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
-	// TODO:  ÔÚ´ËÌí¼Ó¶îÍâµÄ³õÊ¼»¯
+	// TODO:  åœ¨æ­¤æ·»åŠ é¢å¤–çš„åˆå§‹åŒ–
 	m_ftHead.CreateFont(15, 0, 0, 0, FW_NORMAL, FALSE, FALSE, 0, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_SWISS, _T("Arial"));
 	m_ftDes.CreateFont(15, 0, 0, 0, FW_NORMAL, FALSE, FALSE, 0, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_SWISS, _T("Arial"));
 	m_ftBtn.CreateFont(16, 0, 0, 0, FW_NORMAL, FALSE, FALSE, 0, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_SWISS, _T("Arial"));
@@ -71,7 +71,7 @@ BOOL CSetupDlg::OnInitDialog()
 		m_ckSaveSettings.SetCheck(FALSE);
 
 	return TRUE;  // return TRUE unless you set the focus to a control
-	// Òì³£:  OCX ÊôÐÔÒ³Ó¦·µ»Ø FALSE
+	// å¼‚å¸¸:  OCX å±žæ€§é¡µåº”è¿”å›ž FALSE
 }
 
 
@@ -173,7 +173,7 @@ void CSetupDlg::InitData()
 	m_szProfileDes[20] = _T("848x480 30fps"); //930kbps
 	m_nProfileValue[20] = 48;
 
-	m_szProfileDes[21] = _T("1280x720 30fps"); //1130kbps
+	m_szProfileDes[21] = _T("1280x720 15fps"); //1130kbps
 	m_nProfileValue[21] = 50;
 	m_szProfileDes[22] = _T("1280x720 30fps"); //1710kbps
 	m_nProfileValue[22] = 52;
@@ -240,7 +240,7 @@ void CSetupDlg::DrawClient(CDC *lpDC)
 
 void CSetupDlg::OnBnClickedBtnconfirmSetup()
 {
-	// TODO:  ÔÚ´ËÌí¼Ó¿Ø¼þÍ¨Öª´¦Àí³ÌÐò´úÂë
+	// TODO:  åœ¨æ­¤æ·»åŠ æŽ§ä»¶é€šçŸ¥å¤„ç†ç¨‹åºä»£ç 
 	GetParent()->SendMessage(WM_GOBACK, 0, 0);
 
 	if (m_ckSaveSettings.GetCheck() == TRUE) {
@@ -296,6 +296,6 @@ BOOL CSetupDlg::IsWHSwap()
 
 void CSetupDlg::OnBnClickedBtncancelSetup()
 {
-	// TODO:  ÔÚ´ËÌí¼Ó¿Ø¼þÍ¨Öª´¦Àí³ÌÐò´úÂë
+	// TODO:  åœ¨æ­¤æ·»åŠ æŽ§ä»¶é€šçŸ¥å¤„ç†ç¨‹åºä»£ç 
 	GetParent()->SendMessage(WM_GOBACK, 0, 0);
 }

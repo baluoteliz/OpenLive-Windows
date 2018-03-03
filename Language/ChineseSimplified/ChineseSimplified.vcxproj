@@ -67,12 +67,14 @@
     <OutDir>$(SolutionDir)$(Configuration)\Language\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\Language\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\Language\</OutDir>
     <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\Language\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\Language\</OutDir>
     <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

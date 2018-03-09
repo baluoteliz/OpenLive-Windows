@@ -4,15 +4,13 @@
 #include "stdafx.h"
 #include "ChineseSimplified.h"
 
+CHINESESIMPLIFIED_API LPCTSTR ID_STR_TITLE = _T("OpenLive");
 
-// 这是导出变量的一个示例
-CHINESESIMPLIFIED_API LPCTSTR ID_STR_TITLE = _T("Agora Live Video");
-
-CHINESESIMPLIFIED_API LPCTSTR IDS_TITLE = _T("Agora Live Video");
+CHINESESIMPLIFIED_API LPCTSTR IDS_TITLE = _T("OpenLive");
 CHINESESIMPLIFIED_API LPCTSTR IDS_LOGO_DESC = _T("Powering Real-Time Communications");
 CHINESESIMPLIFIED_API LPCTSTR IDS_LOGO_AGORAWEB = _T("agora.io");
 
-CHINESESIMPLIFIED_API LPCTSTR IDS_PRE_TITLE = _T("Slelct conference type");
+CHINESESIMPLIFIED_API LPCTSTR IDS_PRE_TITLE = _T("Select conference type");
 CHINESESIMPLIFIED_API LPCTSTR IDS_PRE_OPTDSC1 = _T("* Optimized calls have best performance but");
 CHINESESIMPLIFIED_API LPCTSTR IDS_PRE_OPTDSC2 = _T("  cannot be joined by web participants");
 CHINESESIMPLIFIED_API LPCTSTR IDS_PRE_WEBDSC1 = _T("* Web-compatible calls have goog performance");

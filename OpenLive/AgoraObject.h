@@ -9,15 +9,16 @@
 
 using namespace agora::rtc;
 
+// 引擎标记位
 #define AG_ENGFLAG_ENNETTEST	0x00000001
 #define AG_ENGFLAG_ECHOTEST		0x00000002
 #define AG_ENGFLAG_SPKPHTEST	0x00000004
 #define AG_ENGFLAG_MICPHTEST	0x00000008
 #define AG_ENGFLAG_VIDEOTEST	0x00000010
 
-#define AG_ENGFLAG_AGCON		0x00000100
-#define AG_ENGFLAG_NSON			0x00000200
-#define AG_ENGFLAG_AECON		0x00000400
+#define AG_ENGFLAG_AGCON		0x00000100	// 自动增益
+#define AG_ENGFLAG_NSON			0x00000200	// 降噪
+#define AG_ENGFLAG_AECON		0x00000400	// 回声消除
 
 #define APP_ID				_T("")
 
@@ -36,6 +37,8 @@ class CAgoraObject
 {
 public:
 	~CAgoraObject(void);
+
+	static CString LoadAppID();
 
 	void SetNetworkTestFlag(BOOL bEnable);
 	BOOL GetNetworkTestFlag();
@@ -74,7 +77,7 @@ public:
 	BOOL EnableVideo(BOOL bEnable = TRUE);
 	BOOL IsVideoEnabled();
 
-	BOOL EnableScreenCapture(HWND hWnd, int nCapFPS = 15, LPCRECT lpCapRect = NULL, BOOL bEnable = TRUE);
+	BOOL EnableScreenCapture(HWND hWnd, int nCapFPS = 15, LPCRECT lpCapRect = NULL, BOOL bEnable = TRUE, int nBitrate = 0);
 	BOOL IsScreenCaptureEnabled();
 
 	BOOL MuteLocalAudio(BOOL bMuted = TRUE);
@@ -107,7 +110,7 @@ public:
 
 	BOOL LocalVideoPreview(HWND hVideoWnd, BOOL bPreviewOn = TRUE);
 
-	BOOL SetLogFilter(LOG_FILTER_TYPE logFilterType, LPCTSTR lpLogPath);
+	BOOL SetLogFilter(UINT logFilterType, LPCTSTR lpLogPath);
 
     BOOL SetEncryptionSecret(LPCTSTR lpKey, int nEncryptType = 0);
 

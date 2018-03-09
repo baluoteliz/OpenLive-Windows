@@ -899,9 +899,9 @@ BOOL CAgoraObject::EnableWhiteboardVer(BOOL bEnable)
 	DWORD dwIEVer = 11001;
 
 	if (bEnable)
-		lStatus = ::RegSetValueEx(hKey, _T("AgoraVideoCall.exe"), 0, REG_DWORD, (const BYTE*)&dwIEVer, sizeof(DWORD));
+		lStatus = ::RegSetValueEx(hKey, _T("OpenLive.exe"), 0, REG_DWORD, (const BYTE*)&dwIEVer, sizeof(DWORD));
 	else
-		lStatus = ::RegDeleteKeyValue(hKey, NULL, _T("AgoraVideoCall.exe"));
+		lStatus = ::RegDeleteKeyValue(hKey, NULL, _T("OpenLive.exe"));
 
 	::RegCloseKey(hKey);
 
@@ -922,9 +922,9 @@ BOOL CAgoraObject::EnableWhiteboardFeq(BOOL bEnable)
 	DWORD dwValue = 1;
 
 	if (bEnable)
-		lStatus = ::RegSetValueEx(hKey, _T("AgoraVideoCall.exe"), 0, REG_DWORD, (const BYTE*)&dwValue, sizeof(DWORD));
+		lStatus = ::RegSetValueEx(hKey, _T("OpenLive.exe"), 0, REG_DWORD, (const BYTE*)&dwValue, sizeof(DWORD));
 	else
-		lStatus = ::RegDeleteKeyValue(hKey, NULL, _T("AgoraVideoCall.exe"));
+		lStatus = ::RegDeleteKeyValue(hKey, NULL, _T("OpenLive.exe"));
 
 	::RegCloseKey(hKey);
 

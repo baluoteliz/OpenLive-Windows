@@ -1,5 +1,5 @@
 
-// AgoraVideoCallDlg.cpp : implementation file
+// OpenLive.cpp : implementation file
 //
 
 #include "stdafx.h"
@@ -87,7 +87,7 @@ BEGIN_MESSAGE_MAP(COpenLiveDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// CAgoraVideoCallDlg message handlers
+// COpenLiveDlg message handlers
 BOOL COpenLiveDlg::PreTranslateMessage(MSG* pMsg)
 {
 	if (pMsg->message == WM_KEYDOWN){

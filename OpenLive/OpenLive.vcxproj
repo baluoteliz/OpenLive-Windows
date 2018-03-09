@@ -185,9 +185,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="AGButton.h" />
     <ClInclude Include="AGComboBox.h" />
     <ClInclude Include="AGConfig.h" />

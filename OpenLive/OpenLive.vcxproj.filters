@@ -358,9 +358,6 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="AgoraObject">
       <UniqueIdentifier>{29637751-31a5-4c1e-8769-45ba86d4bad0}</UniqueIdentifier>
     </Filter>

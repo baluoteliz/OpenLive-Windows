@@ -1,4 +1,4 @@
-// SetupDlg.cpp : ÃŠÂµÃÃ–ÃŽÃ„Â¼Ã¾
+// SetupDlg.cpp : ÊµÏÖÎÄ¼þ
 //
 
 #include "stdafx.h"
@@ -7,7 +7,7 @@
 #include "afxdialogex.h"
 
 
-// CSetupDlg Â¶Ã”Â»Â°Â¿Ã²
+// CSetupDlg ¶Ô»°¿ò
 
 IMPLEMENT_DYNAMIC(CSetupDlg, CDialogEx)
 
@@ -47,14 +47,14 @@ BEGIN_MESSAGE_MAP(CSetupDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// CSetupDlg ÃÃ»ÃÂ¢Â´Â¦Ã€Ã­Â³ÃŒÃÃ²
+// CSetupDlg ÏûÏ¢´¦Àí³ÌÐò
 
 
 BOOL CSetupDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
-	// TODO:  Ã”ÃšÂ´Ã‹ÃŒÃ­Â¼Ã“Â¶Ã®ÃÃ¢ÂµÃ„Â³ÃµÃŠÂ¼Â»Â¯
+	// TODO:  ÔÚ´ËÌí¼Ó¶îÍâµÄ³õÊ¼»¯
 	m_ftHead.CreateFont(15, 0, 0, 0, FW_NORMAL, FALSE, FALSE, 0, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_SWISS, _T("Arial"));
 	m_ftDes.CreateFont(15, 0, 0, 0, FW_NORMAL, FALSE, FALSE, 0, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_SWISS, _T("Arial"));
 	m_ftBtn.CreateFont(16, 0, 0, 0, FW_NORMAL, FALSE, FALSE, 0, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_SWISS, _T("Arial"));
@@ -71,7 +71,7 @@ BOOL CSetupDlg::OnInitDialog()
 		m_ckSaveSettings.SetCheck(FALSE);
 
 	return TRUE;  // return TRUE unless you set the focus to a control
-	// Ã’Ã¬Â³Â£:  OCX ÃŠÃ´ÃÃ”Ã’Â³Ã“Â¦Â·ÂµÂ»Ã˜ FALSE
+	// Òì³£:  OCX ÊôÐÔÒ³Ó¦·µ»Ø FALSE
 }
 
 
@@ -240,7 +240,7 @@ void CSetupDlg::DrawClient(CDC *lpDC)
 
 void CSetupDlg::OnBnClickedBtnconfirmSetup()
 {
-	// TODO:  Ã”ÃšÂ´Ã‹ÃŒÃ­Â¼Ã“Â¿Ã˜Â¼Ã¾ÃÂ¨Ã–ÂªÂ´Â¦Ã€Ã­Â³ÃŒÃÃ²Â´ÃºÃ‚Ã«
+	// TODO:  ÔÚ´ËÌí¼Ó¿Ø¼þÍ¨Öª´¦Àí³ÌÐò´úÂë
 	GetParent()->SendMessage(WM_GOBACK, 0, 0);
 
 	if (m_ckSaveSettings.GetCheck() == TRUE) {
@@ -296,6 +296,6 @@ BOOL CSetupDlg::IsWHSwap()
 
 void CSetupDlg::OnBnClickedBtncancelSetup()
 {
-	// TODO:  Ã”ÃšÂ´Ã‹ÃŒÃ­Â¼Ã“Â¿Ã˜Â¼Ã¾ÃÂ¨Ã–ÂªÂ´Â¦Ã€Ã­Â³ÃŒÃÃ²Â´ÃºÃ‚Ã«
+	// TODO:  ÔÚ´ËÌí¼Ó¿Ø¼þÍ¨Öª´¦Àí³ÌÐò´úÂë
 	GetParent()->SendMessage(WM_GOBACK, 0, 0);
 }

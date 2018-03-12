@@ -1,6 +1,6 @@
 # Open Live Windows
 
-*其他语言版本： [简体中文](README.md)*
+*其他语言版本： [简体中文](README.zh.md)*
 
 The Open Live Windows Sample App is an open-source demo that will help you get live video chat integrated directly into your windows applications using the Agora Video SDK.
 
@@ -29,10 +29,9 @@ First, create a developer account at [Agora.io](https://dashboard.agora.io/signi
 #define APP_ID _T("Your App ID")
 ```
 
-Next, download the **Agora Video SDK** from [Agora.io SDK](https://www.agora.io/en/blog/download/). Unzip the downloaded SDK package and copy the **sdk** to the "OpenLive" folder in project（the old one may be over written）.
+Next, download the **Agora Video SDK** from [Agora.io SDK](https://www.agora.io/en/download/). Unzip the downloaded SDK package and copy the **sdk** to the project folder(the old one may be over written).
 
 Finally, Open OpenLive.sln with your VC++ 2013(or higher) and build all solution and run.
-* there are tow different versions of the sdk package, x86 and x64, when build the x86 version, switch your solution platform to Win32 mode; when build the x64 version, switch it to x64 mode.
 
 ## Developer Environment Requirements
 * VC++ 2013(or higher)
@@ -41,7 +40,7 @@ Finally, Open OpenLive.sln with your VC++ 2013(or higher) and build all solution
 ## Connect Us
 
 - You can find full API document at [Document Center](https://docs.agora.io/en/)
-- You can fire bugs about this demo at [issue](https://github.com/AgoraIO/OpenLive-Windows/issues)
+- You can file bugs about this demo at [issue](https://github.com/AgoraIO/OpenLive-Windows/issues)
 
 ## License
 
